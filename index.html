@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <!--Google Fonts-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!--My Css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Font Awesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <h1>Nostra</h1>
+
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="options.html">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact</a></p>
+
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="whislist" onclick="goToWishlist()">❤️ <span id="wishlist-count">0</span></div>
+    </nav>
+
+    <!--Side Navbar-->
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closeNavbar()">
+            <i class="fa-solid fa-xmark" ></i>
+        </p>
+
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="options.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+    </div>
+
+    <!--header-->
+    <div class="header">
+        <div>
+            <h1>Level Up Your Style</h1>
+            <p>With Our Stunning Collections</p>
+            <a href="options.html" class="shop-link">
+                <button class="header-button">Shop Now</button>
+            </a>    
+        </div>
+
+
+        <div>
+            <img class="header-image" src="" id="heroImage" onclick="clicking()" alt="" height="200" width="200">
+        </div>
+        
+    </div>
+
+
+
+    <!--service-->
+    <div class="service">
+        <div class="service-container-1">
+            <div>
+                <h2>We Provide Best</h2>
+            </div>
+
+            <div>
+                <p>|| We Ensure That Our Customers Have The Best Shopping Experience Possible.</p>
+            </div>
+        </div>
+
+        <div class="service-container-2">
+            <div>
+                <i class="fa-regular fa-face-smile"></i>
+                <h4>Satisfaction Guarantee</h4>
+                <p>We Stand behind the quality of our products If you're not satisfied, we'll make it right with an easy return policy.</p>
+            </div>
+
+
+            <div>
+                <i class="fa-solid fa-rocket"></i>
+                <h4>New Arrivals Everyday</h4>
+                <p>Discover new product everyday We constantly update our collection to keep you ahead of the trends and best deals.</p>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-truck"></i>
+                <h4>Fast And Free Shipping</h4>
+                <p>Get your products delivered quickly and free of charge with our fast shipping options so you can recive them without delay.</p>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <div style="padding: 20px;">
+    <h2>New Arrivals</h2>
+    </div>
+
+    
+
+    <div class="products">
+
+  <div class="card">
+    <button onclick="handleWishlist(this, {
+        name: 'Embroidered saree',
+        price: 499
+    })">🤍</button>
+    <img src="https://5.imimg.com/data5/SELLER/Default/2022/10/AJ/UE/WH/152197079/crepe-pink-lycra-saree-wit-unstitched-blouse-4--1000x1000.jpg">
+    <h3>Embroidered saree</h3>
+    <p class="price">₹499</p>
+    <button onclick="clicking('Embroidered saree', 499)">Buy Now</button>
+  </div>
+
+  <div class="card">
+    <button onclick="handleWishlist(this, {
+        name: 'Lehenga Saree',
+        price: 799
+    })">🤍</button>
+    <img src="https://wholetex.sgp1.cdn.digitaloceanspaces.com/full/sushma-carnival-fancy-saree-3589.jpg">
+    <h3>Lehenga Saree</h3>
+    <p class="price">₹799</p>
+    <button onclick="clicking('Lehenga Saree', 799)">Buy Now</button>
+  </div>
+
+  <div class="card">
+    <button onclick="handleWishlist(this, {
+        name: 'Red Silk Saree',
+        price: 749
+    })">🤍</button>
+    <img src="https://i.pinimg.com/originals/76/65/cd/7665cda2544d9b7165373a1c40a5fc19.jpg">
+    <h3>Red Silk Saree</h3>
+    <p class="price">₹749</p>
+    <button onclick="clicking('Red Silk Saree', 749)">Buy Now</button>
+  </div>
+
+  <div class="card">
+    <button onclick="handleWishlist(this, {
+        name: 'Peach Party Gown',
+        price: 449
+    })">🤍</button>
+    <img src="https://i.pinimg.com/736x/cc/28/ba/cc28ba7ad39ff55181d0f96f91cf2f4a.jpg">
+    <h3>Peach Party Gown</h3>
+    <p class="price">₹449</p>
+    <button onclick="clicking('Peach Party Gown', 449)">Buy Now</button>
+  </div>
+
+</div>
+
+
+
+    </div>
+    <div style="padding: 20px;">
+        <h2>Most Wanted</h2>
+    </div>
+
+    <div class="products">
+
+  <div class="card">
+    <button onclick="handleWishlist(this, {
+      name: 'Traditional Silk Saree',
+      price: 449
+    })">🤍</button>
+    <img src="https://img.freepik.com/premium-photo/women-beautiful-saree_920356-8005.jpg">
+    <h3>Traditional Silk Saree</h3>
+    <p class="price">₹449</p>
+    <button onclick="clicking('Traditional Silk Saree', 449)">Buy Now</button>
+  </div>
+
+  <div class="card">
+        <button onclick="handleWishlist(this, {
+        name: 'Chudidhar Wear',
+        price: 369
+    })">🤍</button>
+    <img src="https://i.pinimg.com/originals/49/c5/6e/49c56e28279b28c50e52a609f6627704.png">
+    <h3>Chudidhar Wear</h3>
+    <p class="price">₹369</p>
+    <button onclick="clicking('Chudidhar Wear', 369)">Buy Now</button>
+  </div>
+
+  <div class="card">
+        <button onclick="handleWishlist(this, {
+        name: 'Casual Top',
+        price: 699
+    })">🤍</button>
+    <img src="https://i.pinimg.com/originals/67/9e/67/679e670bbff1ab72be1d241feb6ac0e1.jpg">
+    <h3>Casual Top</h3>
+    <p class="price">₹699</p>
+    <button onclick="clicking('Casual Top', 699)">Buy Now</button>
+  </div>
+
+  <div class="card">
+        <button onclick="handleWishlist(this, {
+        name: 'Salvar Wear',
+        price: 399
+    })">🤍</button>
+    <img src="https://peachmode.com/cdn/shop/files/2_AARD-2030-PEACH-PEACHMODE_668a600e-6d6d-4541-bfdc-944db530c57e.jpg?v=1713521914">
+    <h3>Salvar Wear</h3>
+    <p class="price">₹399</p>
+    <button onclick="clicking('Salvar Wear', 399)">Buy Now</button>
+  </div>
+
+</div>
+
+
+<center>
+    <div class="news">
+    <h2>Join Our News Letter</h2>
+    <p>Signup For Our Email Newsletter to get exclusive offers and the latest news.</p>
+    <div>
+        <input type="text" class="Search">
+    </div>
+    <div>
+        <button class="news-button">Subscribe</button><br><br>
+    </div>
+</div>
+</center>
+
+    <!--Footer-->
+<div class="footer-content">
+    <h2>Nostra</h2>
+    <p>
+        Your destination for trendy fashion and timeless elegance.
+        Explore our latest collections of sarees, dresses, and party wear at affordable prices.
+        Quality, style, and customer satisfaction are our top priorities.
+    </p>
+
+    <div class="footer-icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+
+    <p>© 2025 Nostra. All Rights Reserved.</p>
+</div>   
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
+
+
+
+<script>
+  var fashionImages = [
+    "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80"
+  ];
+
+  var image = document.getElementById("heroImage");
+
+  function changeImage() {
+    image.style.opacity = 0;
+
+    setTimeout(function() {
+      var randomImage = fashionImages[Math.floor(Math.random() * fashionImages.length)];
+      image.src = randomImage;
+      image.style.opacity = 1;
+    }, 500);
+  }
+
+  changeImage(); // first load
+  setInterval(changeImage, 3000); // change every 3 seconds
+</script>
+
+
+
+<script>
+// ✅ WISHLIST LOAD (page open aagum pothu)
+document.addEventListener("DOMContentLoaded", () => {
+  updateWishlistCount();
+  loadWishlistIcons();
+});
+
+// ✅ ADD / REMOVE WISHLIST
+function handleWishlist(btn, product) {
+  let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+
+  let index = wishlist.findIndex(item => item.name === product.name);
+
+  if (index === -1) {
+    wishlist.push(product);
+    btn.innerText = "❤️";
+  } else {
+    wishlist.splice(index, 1);
+    btn.innerText = "🤍";
+  }
+
+  localStorage.setItem("wishlist", JSON.stringify(wishlist));
+  updateWishlistCount();
+}
+
+// ✅ UPDATE COUNT
+function updateWishlistCount() {
+  let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+  document.getElementById("wishlist-count").innerText = wishlist.length;
+}
+
+// ✅ LOAD ICON STATE (refresh apram correct icon varum)
+function loadWishlistIcons() {
+  let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+
+  document.querySelectorAll(".card").forEach(card => {
+    let name = card.querySelector("h3").innerText;
+    let btn = card.querySelector("button");
+
+    let exists = wishlist.find(item => item.name === name);
+    if (exists) {
+      btn.innerText = "❤️";
+    }
+  });
+}
+
+// ✅ NAVIGATION
+function goToWishlist() {
+  window.location.href = "wishlist.html";
+}
+</script>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--Navbar-->
+  <nav class="navbar">
+    <h1>Nostra</h1>
+
+    <div class="navbar-links">
+        <p class="navbar-link"><a href="index.html">Home</a></p>
+        <p class="navbar-link"><a href="options.html">Collections</a></p>
+        <p class="navbar-link"><a href="contact.html">Contact</a></p>
+
+    </div>
+  </nav> <br>
+
+    <div class="product-details" style="background: linear-gradient(135deg, #c2dafb, #eea6e2);">
+     <span class="close-btn" onclick="goToWomenCollections()">x</span>
+    </div>
+    <center>
+        <h1 style="font-size: x-large;">Product Details</h1>
+    </center>
+
+<center> <br>
+  <div class="product-image">
+        <img src="https://i.pinimg.com/originals/5c/a9/7c/5ca97cff950ddd87fe1ada7a99857d6f.jpg" alt="Product Image" height="255" width="255">
+    </div> <br>
+
+    <div class="product-details">
+        <h2>pink Saree</h2>
+        <p>This is a premium pink saree made from high-quality cotton Top Model.</p>
+        <p>Price: ₹329.99</p>
+        <a href="payment.html" class="shop-link">
+          <button class="size">Buy Now</button>
+        </a>
+  </div>
+</div>
+</center>
+<div class="product-container">
+    
+
+<script src="script.js"></script>
+</body>
+</html>
+
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background: linear-gradient(135deg, #c2dafb, #eea6e2);
+  min-height: 100vh;
+}
+/* Navbar */
+.navbar {
+  width: 100%;
+  background: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.navbar h1 {
+  font-size: 22px;
+  font-weight: bold;
+}
+.navbar-links a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.navbar-links a:hover {
+  color: #9333ea;
+}
+/* Product Details */
+.product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+}
+.product-image img {
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.product-details {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.product-details h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+.product-details p {
+  margin-bottom: 10px;
+  color: #555;
+}
+.size {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #9333ea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.size:hover {
+  background: #7a29b8;
+}
+
+.product-details{
+  position: relative;
+}
+.product-details .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+}
+.close-btn:hover {
+  color: red;
+}
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+}
+
+</style>
+
+
+<script>
+function goToWomenCollections() {
+  window.location.href = "womencollection.html";
+}
+</script>

@@ -1,0 +1,153 @@
+  <nav class="navbar">
+    <h1>Nostra</h1>
+
+    <div class="navbar-links">
+        <p class="navbar-link"><a href="index.html">Home</a></p>
+        <p class="navbar-link"><a href="options.html">Collections</a></p>
+        <p class="navbar-link"><a href="contact.html">Contact</a></p>
+    </div>
+  </nav>
+
+
+<html>
+    <head>
+    <style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
+}
+.navbar-links{
+    display: flex;
+    column-gap: 20px;
+    left: 15px;
+
+}
+
+.navbar-links a{
+    text-decoration: none;
+    color: #1D232C;
+    font-weight: 500;
+}
+
+.navbar-links a:hover{
+    text-decoration: underline;
+    color: #1D232C;
+
+}
+.navbar-menu-toggle{
+    display: none;
+    font-size: 24px;
+}
+
+</style>
+
+
+<!-- < center boxes> -->
+
+<div class="main">
+    <div class="box" onclick="newchange1()">Mens</div>
+    <div class="box" onclick="newchange2()">Womens</div>
+</div>
+
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    background-color: lightgray;
+
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+
+    
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+/* CENTER CONTENT */
+.main {
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;   /* space between two boxes */
+    gap: 40px;
+    border-radius: 10px;
+    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('https://5.imimg.com/data5/ANDROID/Default/2022/12/ZR/WE/PJ/151679128/product-jpeg-1000x1000.jpg');
+
+}
+
+/* BOX STYLE */
+.box {
+    width: 220px;
+    height: 150px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.8);
+    background-color: whitesmoke;
+
+}
+
+.box:hover {
+    background-color: #f2f2f2;
+    transform: translateY(-9px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    background-color: white;
+
+
+}
+
+
+</style>
+
+<script>
+    function newchange1(){
+        window.location.href = "collection.html";
+    }
+    function newchange2(){
+        window.location.href = "womencollection.html";
+    }
+</script>    

@@ -1,0 +1,200 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nostra | Payment</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+}
+
+/* HEADER (Nostra Nav) */
+header {
+  width: 100%;
+  background: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #9333ea;
+}
+
+/* CENTER PAYMENT */
+.page {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-card {
+  background: #ffffff;
+  width: 380px;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.payment-card h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.payment-card p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  border: 2px solid #eee;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pay-icon {
+  width: 28px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.option:hover {
+  border-color: #a855f7;
+  background: #faf5ff;
+}
+
+.bank-details {
+  display: none;
+  margin-top: 10px;
+}
+
+.bank-details input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  background: linear-gradient(135deg, #9333ea, #ec4899);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.success {
+  display: none;
+  text-align: center;
+  color: green;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+  </style>
+</head>
+<body>  <!-- HEADER -->  <header>
+    <div class="logo">Nostra</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="options.html">Collections</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>  <!-- PAYMENT CENTER -->  <div class="page">
+    <div class="payment-card">
+      <h2>Payment</h2>
+      <p>Choose your payment method</p><div class="option">
+    <input type="radio" name="payment" id="bank" />
+    <label for="bank"> 
+      <img src="https://img.icons8.com/ios-filled/50/bank.png" class="pay-icon" />
+      Bank Account
+    </label>
+    <div class="bank-details" id="bankDetails">
+      <input type="text" placeholder="Account Holder Name" />
+      <input type="text" placeholder="Account Number" />
+      <input type="text" placeholder="IFSC Code" />
+    </div>
+  </div>
+
+  <div class="option">
+    <input type="radio" name="payment" id="gpay" />
+    <label for="gpay">
+      <img src="https://i.pinimg.com/originals/60/5a/bd/605abdb7af3405c6b20a426b1e128322.png" class="pay-icon" />
+      Google Pay (GPay)
+    </label>
+  </div>
+
+  <div class="option">
+    <input type="radio" name="payment" id="paytm" />
+    <label for="paytm">
+      <img src="https://static.vecteezy.com/system/resources/previews/022/100/711/large_2x/paytm-logo-transparent-free-png.png" class="pay-icon" />
+      Paytm
+    </label>
+  </div>
+
+  <div class="option">
+    <input type="radio" name="payment" id="phonepe" />
+    <label for="phonepe">
+      <img src="https://cdn.freelogovectors.net/wp-content/uploads/2023/11/phonepe_logo-freelogovectors.net_.png" class="pay-icon" />
+      PhonePe
+    </label>
+  </div>
+
+  <button onclick="makePayment()">Pay Now</button>
+  <div class="success" id="successMsg">Payment Successful 🎉</div>
+</div>
+
+  </div>  <script>
+    const bankRadio = document.getElementById('bank');
+    const bankDetails = document.getElementById('bankDetails');
+
+    document.querySelectorAll('input[name="payment"]').forEach(radio => {
+      radio.addEventListener('change', () => {
+        bankDetails.style.display = bankRadio.checked ? 'block' : 'none';
+      });
+    });
+
+    function makePayment() {
+      const selected = document.querySelector('input[name="payment"]:checked');
+      if (!selected) {
+        alert('Please select a payment method');
+        return;
+      }
+      document.getElementById('successMsg').style.display = 'block';
+    }
+  </script></body>
+</html>

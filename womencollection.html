@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <!--Google Fonts-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--My Css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Font Awesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <h1>Nostra</h1>
+
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="options.html">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact</a></p>
+
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="comeNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!--Side Navbar-->
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closeNavbar()">
+            <i class="fa-solid fa-xmark"  style="cursor: pointer;" ></i>
+        </p>
+
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="options.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+    </div>
+
+    <!--product-->
+<div class="search-box">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input type="text" placeholder="Search products...">
+</div>
+
+
+        <div class="products" id="products">
+
+            <div class="products-box">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2022/10/AJ/UE/WH/152197079/crepe-pink-lycra-saree-wit-unstitched-blouse-4--1000x1000.jpg" onclick="newpage9()" alt=""  height="200" width="200" style="cursor: pointer;">
+                <p>Pista Green saree</p>
+            </div>
+
+            <div class="products-box">
+                <img src="https://wholetex.sgp1.cdn.digitaloceanspaces.com/full/sushma-carnival-fancy-saree-3589.jpg" onclick="newpages9()" alt=""  height="200" width="200" style="cursor: pointer;">
+                <p>Brown saree</p>
+            </div>
+
+            <div class="products-box">
+                <img src="https://i.pinimg.com/originals/76/65/cd/7665cda2544d9b7165373a1c40a5fc19.jpg" onclick="newpagee9()" alt=""  height="200" width="200" style="cursor: pointer;">
+                <p>Red saree</p>
+            </div>
+
+            <div class="products-box">
+                <img src="https://i.pinimg.com/originals/5c/a9/7c/5ca97cff950ddd87fe1ada7a99857d6f.jpg" onclick="newpagees9()" alt=""  height="200" width="200" style="cursor: pointer;">
+                <p>Pink saree</p>
+            </div>
+
+
+            <div class="products-box">
+                <img src="https://style.pk/wp-content/uploads/2016/08/Latest-Sarees-for-Women-2016-9.jpg" onclick="newpage59()" alt=""  height="200" width="200" style="cursor: pointer;">
+                <p>Rose Saree</p>
+            </div>
+
+            <div class="products-box">
+                <img src="https://i.pinimg.com/736x/95/59/36/955936984e9d8834facf928b3d1c5e81.jpg" onclick="newpage69()" alt=""  height="200" width="200" style="cursor: pointer;">
+                <p>white with yellow chuddie</p>
+            </div>
+
+            <div class="products-box">
+                <img src="https://mannatclothing.com/cdn/shop/files/resize_db168b3b-38fe-44b6-a2fb-53217c39faac.jpg?v=1696662724&width=1080" onclick="newpage79()" alt=""  height="200" width="200" style="cursor: pointer;">
+                <p>green chuddie</p>
+            </div>
+
+            <div class="products-box">
+                <img src="https://i.pinimg.com/736x/cc/28/ba/cc28ba7ad39ff55181d0f96f91cf2f4a.jpg" onclick="newpage89()" alt=""  height="200" width="200" style="cursor: pointer;">
+                <p>pink chuddie</p>
+                
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+    <!--Footer-->
+<div class="footer-content">
+    <h2>Nostra</h2>
+    <p>
+        Your destination for trendy fashion and timeless elegance.
+        Explore our latest collections of sarees, dresses, and party wear at affordable prices.
+        Quality, style, and customer satisfaction are our top priorities.
+    </p>
+
+    <div class="footer-icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+
+    <p>© 2025 Nostra. All Rights Reserved.</p>
+</div> 
+
+
+
+    </div>
+
+<style>
+    .search-box{
+    width: 320px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    padding: 12px 18px;
+    background: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.search-box i{
+    color: #888;
+    margin-right: 10px;
+}
+
+.search-box input{
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+}
+</style>
+
+
+
+    <script src="collection.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
+
+<script>
+ var sidenav = document.querySelector(".side-navbar")
+
+
+function comeNavbar()
+{
+    sidenav.style.left="0"
+}
+
+function closeNavbar()
+{
+    sidenav.style.left="-60%"
+    
+}
+</script>

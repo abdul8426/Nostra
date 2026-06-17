@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <!--Google Fonts-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--My Css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Font Awesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <h1>Nostra</h1>
+
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="options.html">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact</a></p>
+
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="comeNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!--Side Navbar-->
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closeNavbar()">
+            <i class="fa-solid fa-xmark"  style="cursor: pointer;"></i>
+        </p>
+
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="options.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+    </div> <br>
+
+    <!--product-->
+<div class="search-box">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input type="text" placeholder="Search products...">
+</div>
+
+        <div class="products" id="products">
+
+            <div class="products-box">
+                <img src="image11.webp" onclick="newpage()" alt=""  height="200" width="200" style="cursor: pointer;">
+                <p>Royal Black</p>
+            </div>
+
+            <div class="products-box">
+                <img src="image12.webp" onclick="newpages()" alt=""  height="200" width="200" style="cursor: pointer;">
+                <p>Classic Maroon</p>
+            </div>
+
+            <div class="products-box">
+                <img src="image14.webp" onclick="newpagee()" alt=""  height="200" width="200" style="cursor: pointer;">
+                <p>Premium Brown</p>
+            </div>
+
+            <div class="products-box">
+                <img src="image13.jpg" onclick="newpagees()" alt=""  height="200" width="200" style="cursor: pointer;">
+                <p>Elegant Beige</p>
+            </div>
+    </div>
+
+
+        <div class="products" id="products">
+
+
+            <div class="products-box">
+                <img src="image15.webp" onclick="newpage5()" alt=""  height="200" width="200" style="cursor: pointer;">
+                <p>Golden Glow</p>
+            </div>
+
+            <div class="products-box">
+                <img src="image16.jpg" onclick="newpage6()" alt=""  height="200" width="200" style="cursor: pointer;">
+                <p>Ivory white</p>
+            </div>
+
+            <div class="products-box">
+                <img src="image17.jpg" onclick="newpage7()" alt=""  height="200" width="200" style="cursor: pointer;">
+                <p>Ash Grey</p>
+            </div>
+
+            <div class="products-box">
+                <img src="image19.jpg" onclick="newpage8()" alt=""  height="200" width="200" style="cursor: pointer;">
+                <p>Navy Blue</p>
+                
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+    <!--Footer-->
+<div class="footer-content">
+    <h2>Nostra</h2>
+    <p>
+        Your destination for trendy fashion and timeless elegance.
+        Explore our latest collections of sarees, dresses, and party wear at affordable prices.
+        Quality, style, and customer satisfaction are our top priorities.
+    </p>
+
+    <div class="footer-icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+
+    <p>© 2025 Nostra. All Rights Reserved.</p>
+</div> 
+
+
+
+    </div>
+
+
+
+
+
+    <script src="collection.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
